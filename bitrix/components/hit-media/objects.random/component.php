@@ -8,13 +8,14 @@
 	  WHERE
 	   el.IBLOCK_ID = 5
 	   ORDER BY RAND()
-	   LIMIT 5
+	   LIMIT 4
 	";
 	global $DB;
-	$res      = $DB->Query($sql);
-	$t        = $res->GetNext();
-	$arResult = $t;
-
+	$res = $DB->Query($sql);
+	while ($t = $res->GetNext()) {
+		$arResult[] = $t;
+	}
+	;
 
 	$this->IncludeComponentTemplate();
 
