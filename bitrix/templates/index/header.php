@@ -17,7 +17,7 @@
 
 <div id = "header">
 	<h1>
-		<a href = "#">
+		<a href = "/">
 			<img src = "/bitrix/templates/index/image/logo.png" alt = "">
 		</a>
 	</h1>

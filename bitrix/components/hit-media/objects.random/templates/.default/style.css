@@ -1,0 +1,9 @@
+.add_table{
+    width: 100%;
+}
+.add_table tr td{
+    text-align: left;
+}
+.add_table tr td:first-child{
+    border-right: 1px solid black;
+}

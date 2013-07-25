@@ -1,15 +1,4 @@
 
-		<h2>Объекты</h2>
-
-		<div class = "main_img">
-			<img src = "/bitrix/templates/index/image/main.jpg" alt = "">
-
-			<div class = "about">
-				<h3>Супермаркет домашней еды «Бахетле», Москва, Большая Сухаревская</h3>
-
-				<a href = "#">Подробнее о проекте </a>
-			</div>
-		</div>
 
 		<ul class = "restaurant">
 			<li>
