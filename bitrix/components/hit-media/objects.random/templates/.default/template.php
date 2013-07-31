@@ -15,10 +15,13 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 </div>
 <ul class = "restaurant">
 	<?foreach ($arResult as $key => $vol): ?>
-		<li>
-			<img src = "/bitrix/templates/index/image/pic1.jpg" alt = "">
-			<a href = "#">Viet Cafe, ресторан</a>
-		</li>
+		<? if ($key > 0): ?>
+				<?$img = CFile::ResizeImageGet($vol['DETAIL_PICTURE'],array('width' => 233,'height' => 154))?>
+			<li>
+				<img src = "<?=$img['src']?>" alt = "">
+				<a href = "/objects/<?=$vol['ID']?>/"><?=$vol['NAME']?></a>
+			</li>
+		<? endif ?>
 	<? endforeach?>
 
 </ul>

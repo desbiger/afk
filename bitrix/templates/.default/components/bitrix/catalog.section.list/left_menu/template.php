@@ -1,6 +1,7 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 	die();
 } ?>
+<!--<pre>--><?//print_r($arResult)?><!--</pre>-->
 <?
 
 
@@ -13,6 +14,7 @@ function GetSubsections($id, $array)
 		if ($vol['IBLOCK_SECTION_ID'] == $id) {
 			$result[] = array(
 				'NAME' => $vol['NAME'],
+				'SECTION_PAGE_URL' => $vol['SECTION_PAGE_URL'],
 				'EDIT_LINK' => $vol['EDIT_LINK'],
 				'IBLOCK_ID' => $vol['IBLOCK_ID'],
 				'DELETE_LINK' => $vol['DELETE_LINK'],
@@ -24,18 +26,18 @@ function GetSubsections($id, $array)
 	return $result;
 }
 
-function PrintSubLevel($array, $class,$a = false)
+function PrintSubLevel($array, $class, $a = false)
 {
 	$str = '';
 	if (count($array) > 0) {
 		$str = "<ul class='" . $class . "'>";
 		foreach ($array as $vol) {
-			$str .= !$a ? "<li>" : "<a>";
+			$str .= !$a ? "<li>" : "<a href='".$vol['SECTION_PAGE_URL']."'>";
 			$str .= !$a ? "<span>" : "";
 			$str .= $vol['NAME'];
 			$str .= !$a ? "</span>" : "";
 			if (count($vol['SUB']) > 0) {
-				$str .= PrintSubLevel($vol['SUB'], 'spis_sub',true);
+				$str .= PrintSubLevel($vol['SUB'], 'spis_sub', true);
 			}
 			$str .= !$a ? "</li>" : "</a>";
 		}
@@ -49,6 +51,7 @@ foreach ($arResult['SECTIONS'] as $sections) {
 	if ($sections['IBLOCK_SECTION_ID'] == '') {
 		$tmp_result = array(
 			'NAME' => $sections['NAME'],
+			'SECTION_PAGE_URL' => $sections['SECTION_PAGE_URL'],
 			'EDIT_LINK' => $sections['EDIT_LINK'],
 			'IBLOCK_ID' => $sections['IBLOCK_ID'],
 			'DELETE_LINK' => $sections['DELETE_LINK'],

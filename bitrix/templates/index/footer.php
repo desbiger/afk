@@ -1,70 +1,70 @@
 
 
-		<ul class = "restaurant">
-			<li>
-				<img src = "/bitrix/templates/index/image/pic1.jpg" alt = ""/>
-				<a href = "#">Viet Cafe, ресторан</a>
-			</li>
-			<li>
-				<img src = "/bitrix/templates/index/image/pic2.jpg" alt = ""/>
-				<a href = "#">Ресторан "Грабли"</a>
-			</li>
-			<li>
-				<img src = "/bitrix/templates/index/image/pic3.jpg" alt = ""/>
-				<a href = "#">"Глобус Гурмэ", гастроно...</a>
-			</li>
-		</ul>
+<!--		<ul class = "restaurant">-->
+<!--			<li>-->
+<!--				<img src = "/bitrix/templates/index/image/pic1.jpg" alt = ""/>-->
+<!--				<a href = "#">Viet Cafe, ресторан</a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<img src = "/bitrix/templates/index/image/pic2.jpg" alt = ""/>-->
+<!--				<a href = "#">Ресторан "Грабли"</a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<img src = "/bitrix/templates/index/image/pic3.jpg" alt = ""/>-->
+<!--				<a href = "#">"Глобус Гурмэ", гастроно...</a>-->
+<!--			</li>-->
+<!--		</ul>-->
 
-		<div class = "list_stat">
-			<h2>Новости</h2>
+<!--		<div class = "list_stat">-->
+<!--			<h2>Новости</h2>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!--				<span>15 июня 2013</span>-->
+<!--				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>-->
+<!--			</div>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!--				<span>15 июня 2013</span>-->
+<!--				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>-->
+<!--			</div>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!--				<span>15 июня 2013</span>-->
+<!--				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>-->
+<!--			</div>-->
+<!--			<div class = "clear"></div>-->
+<!--			<a href = "#" class = "archive">Архив новостей</a>-->
+<!--		</div>-->
 
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-				<span>15 июня 2013</span>
-				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>
-			</div>
-
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-				<span>15 июня 2013</span>
-				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>
-			</div>
-
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-				<span>15 июня 2013</span>
-				<a href = "#">Индукционные плиты Apach - долгожданные новинки...</a>
-			</div>
-			<div class = "clear"></div>
-			<a href = "#" class = "archive">Архив новостей</a>
-		</div>
-
-		<div class = "list_stat">
-			<h2>Публикации</h2>
-
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-
-				<a href = "#">На профессиональной кухне предприятий общественного питания, особенно в летний
-				              период...</a>
-			</div>
-
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-
-				<a href = "#">Идеальное оборудование - посудомоечные машины с фронтальной загрузкой Electrolux....</a>
-			</div>
-
-			<div class = "list">
-				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>
-
-				<a href = "#">Это возможно при помощи хорошего
-				              как утверждают ведущие специалисты
-				              в сфере ресторанного консалтинга.... </a>
-			</div>
-			<div class = "clear"></div>
-			<a href = "#" class = "archive">Архив публикаций</a>
-		</div>
+<!--		<div class = "list_stat">-->
+<!--			<h2>Публикации</h2>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!---->
+<!--				<a href = "#">На профессиональной кухне предприятий общественного питания, особенно в летний-->
+<!--				              период...</a>-->
+<!--			</div>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!---->
+<!--				<a href = "#">Идеальное оборудование - посудомоечные машины с фронтальной загрузкой Electrolux....</a>-->
+<!--			</div>-->
+<!---->
+<!--			<div class = "list">-->
+<!--				<img src = "/bitrix/templates/index/image/pic4.jpg" alt = ""/>-->
+<!---->
+<!--				<a href = "#">Это возможно при помощи хорошего-->
+<!--				              как утверждают ведущие специалисты-->
+<!--				              в сфере ресторанного консалтинга.... </a>-->
+<!--			</div>-->
+<!--			<div class = "clear"></div>-->
+<!--			<a href = "#" class = "archive">Архив публикаций</a>-->
+<!--		</div>-->
 
 	</div>
 </div>
