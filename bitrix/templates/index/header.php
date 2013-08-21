@@ -55,6 +55,8 @@
 		"MENU_CACHE_GET_VARS" => ""
 	)
 );?>
+
+
 	<div class = "search">
 		<form action = "#" method = "post">
 			<input type = "text" name = "text" class = "text"/>

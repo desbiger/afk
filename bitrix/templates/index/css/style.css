@@ -1,4 +1,29 @@
-﻿* {
+﻿.font1{
+    font-size: 13px!important;
+}
+.font2{
+    font-size: 17px!important;
+}
+.font3{
+    font-size: 19px!important;
+}
+.font4{
+    font-size: 21px!important;
+}
+.font5{
+    font-size: 23px!important;
+}
+.font6{
+    font-size: 25px!important;
+}
+
+.white_grey{
+    color: rgb(194, 194, 194)!important;
+}
+
+
+
+* {
     padding: 0;
     margin: 0;
 }
@@ -236,6 +261,19 @@ ul.share_but li a {
     text-decoration: underline;
 }
 
+.list {
+    margin-bottom: 10px;
+}
+.list .img_conteyner{
+    float:left;
+    width: 75px;
+    /*height: 100px;*/
+}
+.list .text_conteyner{
+    float: left;
+    width: 650px;
+    margin-bottom: 10px;
+}
 .list span {
     display: block;
     color: #696969;
@@ -244,7 +282,7 @@ ul.share_but li a {
 }
 
 .list a {
-    color: #929191;
+    color: rgb(44, 43, 43);
     font-size: 14px;
     text-decoration: none;
     line-height: 19px;
@@ -263,6 +301,16 @@ ul.share_but li a {
     background-repeat: no-repeat;
     background-position: center left;
     padding-left: 33px;
+    font-family: 'pf_din_text_cond_promedium';
+    text-transform: uppercase;
+}
+#content h2 a{
+    font-size: 26px;
+    font-weight: normal;
+    color: #414042;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center left;
     font-family: 'pf_din_text_cond_promedium';
     text-transform: uppercase;
 }
@@ -365,6 +413,8 @@ ul.menu_left {
 }
 
 ul.menu_left li {
+
+    text-transform: uppercase;
     font-family: 'pf_din_text_cond_promedium';
     color: #4A4A4A;
     font-size: 16px;
@@ -410,14 +460,15 @@ ul.spisok_product li {
     margin-bottom: 10px;
 }
 
-ul.spisok_product li span {
+ul.spisok_product li a {
+    text-transform: lowercase;
     color: #929191;
     display: block;
     line-height: 22px;
     font-family: arial, sans-serif;
     text-decoration: none;
     font-size: 14px;
-    background-image: url(../image/list.png);
+    /*background-image: url(../image/list.png);*/
     background-repeat: no-repeat;
     background-position: 0 7px;
     padding-left: 15px;
