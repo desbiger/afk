@@ -21,6 +21,26 @@
     color: rgb(194, 194, 194)!important;
 }
 
+.gallery{
+    float: left;
+}
+
+.product_section{
+    width: 143px;
+    height: 130px;
+    border: 1px solid #999799;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.product_section h5{
+    display:block;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+
+}
 
 
 * {

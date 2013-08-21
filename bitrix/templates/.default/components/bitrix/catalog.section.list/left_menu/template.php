@@ -26,16 +26,18 @@ function GetSubsections($id, $array)
 	return $result;
 }
 
-function PrintSubLevel($array, $class, $a = false)
+function PrintSubLevel($array, $class, $a = false, $display = false)
 {
-	$str = '';
+	$str  = '';
+	$show = $display ? "style='display:block!important'" : "";
 	if (count($array) > 0) {
-		$str = "<ul class='" . $class . "'>";
+		$str = "<ul class='" . $class . "' " . $show . ">";
 		foreach ($array as $vol) {
-			$str .= !$a ? "<li>" : "<a href='".$vol['SECTION_PAGE_URL']."'>";
-			$str .= !$a ? "<span>" : "";
+			$selected = $_REQUEST['SECTION_ID'] == $vol['ID'] ? "style='font-weight:bold!important;'" : "";
+			$str .= !$a ? "<li>" : "<a {$selected} href='" . $vol['SECTION_PAGE_URL'] . "'>";
+			$str .= !$a ? "<a {$selected} href='" . $vol['SECTION_PAGE_URL'] . "'>" : "";
 			$str .= $vol['NAME'];
-			$str .= !$a ? "</span>" : "";
+			$str .= !$a ? "</a>" : "";
 			if (count($vol['SUB']) > 0) {
 				$str .= PrintSubLevel($vol['SUB'], 'spis_sub', true);
 			}
@@ -44,6 +46,17 @@ function PrintSubLevel($array, $class, $a = false)
 		$str .= "</ul>";
 	}
 	return $str;
+}
+
+function CheckOnOpen($array, $variable)
+{
+	$result = false;
+	foreach ($array as $vol) {
+		if ($_REQUEST[$variable] == $vol['ID'] && !$result) {
+			$result = true;
+		}
+	}
+	return $result;
 }
 
 
@@ -73,7 +86,7 @@ foreach ($arResult['SECTIONS'] as $sections) {
 
 		<li>
 			<span><?=$arSection['NAME']?></span>
-			<?=PrintSubLevel($arSection['SUB'], "spisok_product")?>
+			<?=PrintSubLevel($arSection['SUB'], "spisok_product", false, CheckOnOpen($arSection['SUB'], 'SECTION_ID'))?>
 		</li>
 	<? endforeach?>
 

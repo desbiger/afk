@@ -6,10 +6,18 @@
 	<title>AFK</title>
 <?$APPLICATION->ShowHead()?>
 	<link href = "/bitrix/templates/index/css/style.css" type = "text/css" rel = "stylesheet">
-	<script type = "text/javascript" src = "/bitrix/templates/index/js/jquery-1.7.min.js"></script>
+	<script type = "text/javascript" src = "/bitrix/templates/index/js/jquery.min.1.4.js"></script>
 	<script type = "text/javascript" src = "/bitrix/templates/index/js/jquery.orbit-1.2.3.min.js"></script>
 	<script type = "text/javascript" src = "/bitrix/templates/index/js/jquery.jcarousel.min.js"></script>
 	<script type = "text/javascript" src = "/bitrix/templates/index/js/scripts.js"></script>
+
+	<link href = "/bitrix/templates/index/fancybox/jquery.fancybox-1.3.4.css" type = "text/css" rel = "stylesheet">
+	<script type="text/javascript" src="/bitrix/templates/index/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.fancy').fancybox();
+		});
+	</script>
 </head>
 <body>
 <?$APPLICATION->ShowPanel()?>
